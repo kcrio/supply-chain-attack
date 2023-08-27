@@ -1,0 +1,13 @@
+{
+  "技术": [
+    {
+      "名称": "组合仿冒-combosquatting"
+    },
+    {
+      "隶属战术": "初始入侵"
+    },
+    {
+      "描述": "Combosquatting这种技术比起typosquatting更侧重于攻击者通过向真实合法的网站域名、包、容器镜像的名称添加或者附加常用词语、术语或者字母来冒充合法的网站域名、包以及容器镜像，例如，流行的名为”lodash”的Javascript包与攻击者创建的名为”lodashs”山寨包、域名“domainchangepassword[.]com”或“domainsecurity[.]com”，Combosquatting诱使用户在不知情的情况下访问、下载、使用这些仿冒的域名、包与镜像，极有可能导致恶意代码注入、漏洞等重大安全风险"
+    }
+  ]
+}
