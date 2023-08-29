@@ -4,3 +4,5 @@
 [https://kcrio.github.io/html/spc_matrix/spc-matrix.htm](https://761851080.wixsite.com/scam)https://761851080.wixsite.com/scam
 
 ------
+
+![image](https://github.com/kcrio/supply-chain-attack/assets/96735391/40fbff10-360e-4484-ab5a-8c8996f7ca72)
