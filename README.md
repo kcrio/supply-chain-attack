@@ -5,4 +5,5 @@ https://761851080.wixsite.com/scam
 
 ------
 
-![image](https://github.com/kcrio/supply-chain-attack/assets/96735391/40fbff10-360e-4484-ab5a-8c8996f7ca72)
+![image](https://github.com/kcrio/supply-chain-attack/assets/96735391/942d3e05-1148-47eb-8ef4-b8f1fa15ecd3)
+
