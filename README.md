@@ -3,7 +3,7 @@
 
 
 
-# Description：
+# Description
 
 https://github.com/kcrio/supply-chain-attack/tree/bbf352c71338d909783d6c40dba0faf19bae5a9a/techniques
 
