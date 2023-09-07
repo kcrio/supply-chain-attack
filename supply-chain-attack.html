@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>软件供应链攻击指标矩阵</title>
+    <style>
+        /* 整体页面样式 */
+        body {
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            font-family: STXihei, sans-serif;
+        }
+        h1{
+            text-align:center;
+            text-transform:uppercase;
+            letter-spacing:-2px;
+            font-size:2.5em;
+            margin:20px 0;
+        }
+
+        /* 第一部分样式 */
+        .section1 {
+            background-color: #f2f2f2; /* 浅灰色背景 */
+            height: 445px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .title {
+            font-family: STXihei, sans-serif;
+            font-weight: 100;
+            font-size: 43px; /* 字号较大 */
+            color: #000; /* 黑色 */
+
+
+            margin-top:85px;
+            margin-bottom: 75px;
+        }
+
+        .subtitle{
+            font-size: 22px; /* 字号23px */
+            margin-bottom: 50px;
+
+        }
+
+
+        /* 第二部分样式 */
+        .section2 {
+            background-color: #f9f9f9; /* 更浅的灰色 */
+            height: 100px;
+            padding: 20px;
+            color: #34495E; 
+
+            text-align:center;
+            text-transform:uppercase;
+            letter-spacing:-2px;
+            font-size:23px;
+            margin:20px 0;
+        }
+
+        .introduction {
+            font-size: 0.9em; /* 字号稍小 */
+        }
+
+        /* 第三部分样式 */
+        .section3 {
+            background-color: #fff; /* 白色背景 */
+            font: 1.2em normal STXihei, STXihei;
+            height:1000px;
+            color: #34495E;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .table-container {
+            width: 95%; /* 表格占70%宽度 */
+            overflow-x: auto; /* 添加水平滚动条 */
+            max-height: 70%;
+            overflow-y: auto;
+        }
+
+        table {
+            border-collapse: separate;
+            margin: auto;
+            width: 70%
+            empty-cells: hide;
+            border-spacing: 5px 12px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #000; /* 单元格方形边框 */
+        }
+
+        th {
+            background-color: #888; /* 表头背景色灰色 */
+            color: #fff;
+        }
+
+        /* 表格阴影效果 */
+        td {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 表格标题样式 */
+        .table-title {
+            font-size: 1.5em; /* 大字号标题 */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* 第一部分的文本样式 */
+        .section1-text {
+            width: 65%; /* 文本占70%宽度 */
+            font-size: 19px; /* 字号20px */
+            text-align: center;
+            margin: 0 auto; /* 水平居中 */
+            line-height: 2; /* 行高 */
+            margin-bottom: -20px;
+            font-family: STXihei, sans-serif;
+        }
+
+        /* 圆角矩形框样式 */
+        .corner-box {
+            position: absolute;
+            top: 60px; /* 上边距调整 */
+            left: 150px; /* 左边距调整 */
+            background-color: #f9f9f9; /* 与第一部分背景色相同 */
+            padding: 4px 16px;
+            border-radius: 10px; /* 圆角 */
+            font-size: 18px; /* 字号 */
+            font-family: avenir-lt-w05_35-light, sans-serif; /* 字体设置 */
+            border: 2px solid #000; /* 边框颜色为黑色 */
+            font-weight: bold;/*加粗*/
+        }
+
+        /* GitHub链接样式 */
+        .github-link {
+            color: #000;
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- 圆角矩形框 -->
+        <div class="corner-box">
+            <a class="github-link" href="https://github.com/kcrio/supply-chain-attack">Supply Chain Attack Matrix</a>
+        </div>
+
+
+        <!-- 第一部分 -->
+        <div class="section1">
+            <div class="title">软件供应链攻击指标矩阵</div>
+            <div class="section1-text">
+                <div class="subtitle">
+                一个全面系统地描述软件供应链攻击行为与技术的攻击指标矩阵</div>
+                <p>
+                    攻击指标矩阵共设14个不同战术维度，战术维度下共设113个技术指标。矩阵中的技术均尽可能覆盖广泛的攻击媒介，包含软件供应链常受到威胁的第三方库与组件中的漏洞，对更深入了解软件供应链存在的潜在威胁与指定安全策略有一定帮助。
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <!-- 第二部分 -->
+        <div class="section2">
+        <!--    <p class="introduction">
+                攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标攻击指标。
+            </p>
+        -->
+            <h1>&darr; Supply Chain Attack Matrix &darr;</h1>
+        </div>
+
+        <!-- 第三部分 -->
+        <div class="section3">
+        <!--    <h2 class="table-title">SUPPLY CHAIN ATTACK</h2>   -->
+            <div class="table-container">
+                 <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-9=8">
+            <title>软件供应链攻击指标矩阵</title>
+            <style>
+                /* 外部表格的样式 */
+                /* 请根据需要自行添加 */
+
+                body{
+            font:1.2em normal Arial,STXihei;
+            color:#34495E;
+        }
+        h1{
+            text-align:center;
+            text-transform:uppercase;
+            letter-spacing:-2px;
+            font-size:2.5em;
+            margin:20px 0;
+        }
+        .container{
+            width:90%;
+            margin:auto;
+        }
+        table{
+            /*border-collapse:collapse;  */
+            border-collapse:separated;
+            margin: auto;
+            width:1800px;
+            height: 900px;
+            empty-cells: hide;
+            border-spacing: 5px 12px;
+       /*     border:"1"；
+            frame=void；   */
+           /* table-layout: fixed; */
+        }
+
+        .grey{
+            border:none;
+            line-height: 20px;
+        }
+        .grey thead{
+            background:#e1e4e6;
+        }
+
+        .purple{
+            border:2px solid #9B59B6;
+        }
+        .purple thead{
+            background:#9B59B6;
+        }
+
+        thead{
+            color:black;
+        }
+        th{
+            text-align:center;
+            padding:5px 0;
+            height: 35px;
+
+
+        /*    overflow: hidden;
+            text-overflow: ellipsis;  */
+        }
+        td{
+            text-align:center;
+            padding:5px 0;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #ffffff;
+            box-shadow: 2px 2px 2px #888;
+        }
+
+        tbody tr:nth-child(even){
+            background:#ffffff;
+        }
+
+      /*  tbody tr:hover{
+            background:#e3effb;
+            color:#a9adb0;
+        } */
+        tbody td:hover{
+            background:#9dbcdb;
+            color:#ffffff;
+            font-size: 15px;
+            font-family: STsong;
+        }
+
+        .fixed{
+            top:0;
+            position:fixed;
+            width:auto;
+            display:none;
+            border:none;
+        }
+
+        .scrollMore{
+            margin-top:600px;
+        }
+        .up{
+            cursor:pointer;
+        }
+
+        /*鼠标悬停高亮*/
+        .activeStyle{
+            background-color: #ED7101;
+        }
+        .correct:before {
+            content:"\2714";
+            font-size:14px;
+            color: white;
+            position: absolute;
+            top:15px;
+            right:0;
+      }
+
+        tr th{font-size: 14px;font-family: STXihei;font-weight: bold;}
+            </style>
+        </head>    
+        <body>    
+        <!-- 外部表格的内容 -->
+
+  <!--      <h1>&darr; Supply Chain Attack Matrix &darr;</h1>  -->
+<table border="2" class="grey" style="font-size: 12px;font-family: STXihei; table-layout: fixed; "> 
+  <!-- 表格第一行，表头 -->
+  <thead>
+    <tr>
+      <th>侦查</th>
+      <th>资源开发</th>
+      <th>初始入侵</th>
+      <th>执行</th>
+      <th>持久控制</th>
+      <th>权限提升</th>
+      <th>躲避防御</th>
+      <th>获取合法凭证访问</th>
+      <th>探测发现</th>
+      <th>横向攻击</th>
+      <th>收集</th>
+      <th>命令与控制</th>
+      <th>数据窃取</th>
+      <th>危害</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>扫描使用的开源依赖项</td>
+      <td>对开源存储库的恶意代码贡献</td>
+      <td>代码存储库污染</td>
+      <td>包管理器威胁</td>
+      <td>代码中后门</td>
+      <td>高权限用户存储库中植入恶意依赖</td>
+      <td>Saas蔓延</td>
+      <td>窃取第三方软件令牌</td>
+      <td>发现依赖的代码存储库</td>
+      <td>跨存储库推送恶意植入</td>
+      <td>来自代码存储库的信息</td>
+      <td>利用远程访问软件</td>
+      <td>泄露到代码存储库</td>
+      <td>恶意模块植入</td>
+    </tr>
+    <tr>
+      <td>扫描代码存储库</td>
+      <td>开源库维护者恶意操作</td>
+      <td>开发环境威胁</td>
+      <td>利用恶意组件/扩展执行</td>
+      <td>植入僵尸实例</td>
+      <td>高权限用户环境引入的恶意组件</td>
+      <td>配置错误</td>
+      <td>暴力破解</td>
+      <td>系统信息发现</td>
+      <td>利用远程服务</td>
+      <td>来自云存储的信息</td>
+      <td>通过传输入口工具</td>
+      <td>泄露到云存储</td>
+      <td>数据操作</td>
+    </tr>
+    <tr>
+      <td>扫描公共容器映像</td>
+      <td>恶意替换合法项目</td>
+      <td>开发工具威胁</td>
+      <td>IDE恶意构建注入</td>
+      <td>部署密钥</td>
+      <td>利用软件漏洞提权</td>
+      <td>开发工具威胁</td>
+      <td>中间人攻击</td>
+      <td>账户发现</td>
+      <td>利用有效账户</td>
+      <td>来自系统的信息</td>
+      <td>伪协议利用</td>
+      <td>网络钩子</td>
+      <td>数据破坏</td>
+    </tr>
+    <tr>
+      <td>供应链关系调查</td>
+      <td>开发恶意项目</td>
+      <td>第三方组件/扩展中的漏洞</td>
+      <td>利用软件漏洞执行</td>
+      <td>浏览器扩展</td>
+      <td>操作访问令牌</td>
+      <td>利用漏洞规避防御</td>
+      <td>强制用户身份验证</td>
+      <td>权限组发现</td>
+      <td>内网钓鱼攻击</td>
+      <td></td>
+      <td></td>
+      <td>利用替代性协议</td>
+      <td>资源劫持</td>
+    </tr>
+    <tr>
+      <td>网络钓鱼获取信息</td>
+      <td>恶意获取</td>
+      <td>存储库劫持</td>
+      <td>运行时后门</td>
+      <td>操作访问令牌</td>
+      <td>滥用权限提升控制机制</td>
+      <td>损害防御机制或组件</td>
+      <td>漏洞利用</td>
+      <td>密码策略发现</td>
+      <td>备用身份验证材料盗取</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>      
+    </tr>
+    <tr>
+      <td>主动扫描</td>
+      <td>入侵更新服务器</td>
+      <td>Combosquatting</td>
+      <td>SQL 注入</td>
+      <td>植入容器镜像</td>
+      <td>利用有效账户</td>
+      <td>操作访问令牌</td>
+      <td>凭据转储</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>扫描开放信息源</td>
+      <td>入侵官方网站</td>
+      <td>Typosquatting</td>
+      <td>命令执行</td>
+      <td>滥用任务计划</td>
+      <td></td>
+      <td>利用有效账户</td>
+      <td>窃取或伪造凭据、证书</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>收集目标主机信息</td>
+      <td>账户窃取</td>
+      <td>依赖关系混淆</td>
+      <td>跨站点脚本</td>
+      <td>外部远程服务</td>
+      <td></td>
+      <td>滥用权限提升控制机制</td>
+      <td>窃取会话cookie</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>收集目标身份信息</td>
+      <td>建立培养账户</td>
+      <td>品牌劫持</td>
+      <td>用户执行</td>
+      <td>账户操作</td>
+      <td></td>
+      <td>清除防御指标</td>
+      <td>泄露不安全存储的凭据</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>影子IT</td>
+      <td>接口利用</td>
+      <td>创建账户</td>
+      <td></td>
+      <td>破坏信任控制</td>
+      <td>输入捕获</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+       <tr>
+      <td></td>
+      <td></td>
+      <td>暴露的公共制品或信息</td>
+      <td>容器部署</td>
+      <td></td>
+      <td></td>
+      <td>备用身份验证材料盗取</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>CI/CD 威胁</td>
+      <td>滥用容器管理命令</td>
+      <td></td>
+      <td></td>
+      <td>混淆文件或信息</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>恶意模块注入</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>利用受信任的第三方关系</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>利用应用程序漏洞及错误</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>网络钓鱼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>利用有效账户</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>路过式攻击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>外部远程服务</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    
+<script>
+//选择某个字段
+function CheckedField(obj) {
+    $(obj).toggleClass("activeStyle correct");//背景色切换
+}
+;(function($) {
+   $.fn.fixMe = function() {
+      return this.each(function() {
+         var $this = $(this),
+            $t_fixed;
+         function init() {
+            $this.wrap('<div class="container" />');
+            $t_fixed = $this.clone();
+            $t_fixed.find("tbody").remove().end().addClass("fixed").insertBefore($this);
+            resizeFixed();
+         }
+         function resizeFixed() {
+            $t_fixed.find("th").each(function(index) {
+               $(this).css("width",$this.find("th").eq(index).outerWidth()+"px");
+            });
+         }
+         function scrollFixed() {
+            var offset = $(this).scrollTop(),
+            tableOffsetTop = $this.offset().top,
+            tableOffsetBottom = tableOffsetTop + $this.height() - $this.find("thead").height();
+            if(offset < tableOffsetTop || offset > tableOffsetBottom)
+               $t_fixed.hide();
+            else if(offset >= tableOffsetTop && offset <= tableOffsetBottom && $t_fixed.is(":hidden"))
+               $t_fixed.show();
+         }
+         $(window).resize(resizeFixed);
+         $(window).scroll(scrollFixed);
+         init();
+      });
+   };
+})(jQuery);
+
+$(document).ready(function(){
+   $("table").fixMe();
+   $(".up").click(function() {
+      $('html, body').animate({
+      scrollTop: 0
+   }, 2000);
+ });
+});
+
+</script>
+
+        </body>
+        </html>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
